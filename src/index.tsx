@@ -112,8 +112,8 @@ const NextTopLoader = ({
     !shadow && shadow !== undefined
       ? ''
       : shadow
-        ? `box-shadow:${shadow}`
-        : `box-shadow:0 0 10px ${color},0 0 5px ${color}`;
+      ? `box-shadow:${shadow}`
+      : `box-shadow:0 0 10px ${color},0 0 5px ${color}`;
 
   // Check if to show at bottom
   const positionStyle = showAtBottom ? 'bottom: 0;' : 'top: 0;';
@@ -254,9 +254,9 @@ const NextTopLoader = ({
             isHashAnchor(window.location.href, anchor.href) ||
             !toAbsoluteURL(anchor.href).startsWith('http')
           ) {
-            NProgress.start();
-            NProgress.done();
-            removeNProgressClass();
+            // NProgress.start();
+            // NProgress.done();
+            // removeNProgressClass();
           } else {
             NProgress.start();
           }
@@ -284,10 +284,10 @@ const NextTopLoader = ({
     })((window as Window).history);
 
     /**
- * Complete TopLoader Progress on replacing current entry of history stack
- * @param {History}
- * @returns {void}
- */
+     * Complete TopLoader Progress on replacing current entry of history stack
+     * @param {History}
+     * @returns {void}
+     */
     ((history: History): void => {
       const replaceState = history.replaceState;
       history.replaceState = (...args) => {
