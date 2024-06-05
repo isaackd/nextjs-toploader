@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TheSGJ/nextjs-toploader.git"
+    "url": "git+https://github.com/isaackd/nextjs-toploader.git"
   },
   "keywords": [
     "Next",
@@ -31,9 +31,9 @@
   "author": "Shri Ganesh Jha",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/TheSGJ/nextjs-toploader/issues"
+    "url": "https://github.com/isaackd/nextjs-toploader/issues"
   },
-  "homepage": "https://github.com/TheSGJ/nextjs-toploader#readme",
+  "homepage": "https://github.com/isaackd/nextjs-toploader#readme",
   "files": [
     "dist/**/*.js*",
     "dist/**/*.mjs*",
